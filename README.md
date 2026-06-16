@@ -53,6 +53,10 @@ I'm a Full Stack Developer with experience building modern web applications usin
 
 ## 📈 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ardra-m-siva&show_icons=true&theme=transparent)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ardra-m-siva&layout=compact&theme=transparent)  
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ardra-m-siva&layout=compact&theme=transparent)
+![GitHub Streak](https://streak-stats.demolab.com?user=ardra-m-siva&theme=transparent)
+
+![React](https://img.shields.io/badge/React-20232A?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb)
