@@ -38,23 +38,21 @@
     <div>
         <div class="container-fluid " style="padding: 0px;">
             <!-- navbar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container d-flex justify-content-center">
-                    <div>
-                        <button style="color:  #39d0cb;" class="navbar-toggler toggler-btn border-0" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fa-solid fa-bars fa-lg"></i>
-                        </button>
-                        <div class="collapse navbar-collapse collapse-menu " id="navbarNavAltMarkup">
-                            <div class="navbar-nav ms-auto text-center align-items-lg-center gap-1 gap-lg-2 py-2 py-lg-0">
-                                <a class=" active item" aria-current="page" href="#home">Home</a>
-                                <a class="item" href="#about">About</a>
-                                <a class="item" href="#skills">Skills</a>
-                                <a class="item" href="#projects">Projects</a>
-                                <a class="item" href="#journey">Journey</a>
-                                <a class="item" href="#contact">Contact</a>
-                            </div>
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <div class="container position-relative justify-content-center">
+                    <button class="navbar-toggler toggler-btn border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fa-lg"></i>
+                    </button>
+                    <div class="collapse navbar-collapse collapse-menu" id="navbarNavAltMarkup">
+                        <div class="navbar-nav mx-auto text-center align-items-lg-center gap-1 gap-lg-2 py-2 py-lg-0">
+                            <a class=" active item" aria-current="page" href="#home">Home</a>
+                            <a class="item" href="#about">About</a>
+                            <a class="item" href="#skills">Skills</a>
+                            <a class="item" href="#projects">Projects</a>
+                            <a class="item" href="#journey">Journey</a>
+                            <a class="item" href="#contact">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -229,33 +227,34 @@
                         <!-- Personal Projects -->
                         <div class="project-category">
                             <h3>Web Development Projects</h3>
-                            <div class="project-list d-flex align-items-center justify-content-center">
-                                <div class="project-item ">
+                            <div class="d-flex align-items-center justify-content-center gap-4 gap-md-3 flex-wrap mt-3">
+                                <div class="project-item p-3 d-flex flex-column">
                                     <h4>Portfolio Website</h4>
                                     <p>My Portfolio Website showcases my skills, projects, and expertise in web
                                         development and UI/UX design. It's a responsive platform with a seamless user
                                         experience.</p>
                                 </div>
-                                <div class="project-item">
+                                <div class="project-item p-3 d-flex flex-column">
                                     <h4>Restaurant Website</h4>
                                     <p>A modern, visually appealing restaurant website with a minimalistic design,
                                         smooth animations, and an interactive user experience.</p>
                                     <!-- <a href=" https://graceful-yeot-ff9801.netlify.app/#" target="_blank"
                                         class="demo-link fw-bold py-2 px-3">View Demo</a> -->
                                 </div>
-                                <div class="project-item">
-                                    <h4>Parallax Website</h4>
-                                    <p>A visually engaging website featuring breathtaking images of outer space,
-                                        designed with a parallax scrolling effect to create depth and a sense of
-                                        movement.</p>
-                                    <!-- <a href="  https://tiny-bombolone-3cb5a0.netlify.app/" target="_blank"
-                                        class="demo-link fw-bold py-2 px-3">View Demo</a> -->
-                                </div>
-                                <div class="project-item">
+                                <div class="project-item p-3 d-flex flex-column">
                                     <h4>Ludo Pixel : A Game For All Abilities</h4>
                                     <p>Inclusive multiplayer Ludo game designed for visually impaired players. Built
                                         with HTML, CSS, JavaScript, and jQuery, it features audio cues and accessible
                                         gameplay.</p>
+                                </div>
+                                <div class="project-item p-3 d-flex flex-column">
+                                    <h4>Level Up Learn</h4>
+                                    <p>Developed a gamified learning platform with subject-based levels, adaptive
+                                        challenges, achievement
+                                        rewards, and progress tracking.Implemented authentication, quiz management, and
+                                        performance tracking.</p>
+                                    <!-- <a href="  https://tiny-bombolone-3cb5a0.netlify.app/" target="_blank"
+                                        class="demo-link fw-bold py-2 px-3">View Demo</a> -->
                                 </div>
                             </div>
                         </div>
@@ -263,7 +262,7 @@
                     <!-- UI/UX Design Projects -->
                     <div class="project-category">
                         <h3>UI/UX Design Projects</h3>
-                        <div class="project-list d-flex">
+                        <div class=" d-flex justify-content-center flex-wrap gap-4 gap-md-3">
                             <div class="project-image-container">
                                 <img src="./images/SignUpFLow.png" alt="Sign-up Flow Design" class="project-image">
                                 <div class="project-text">
@@ -287,11 +286,11 @@
                     </div>
                 </div>
             </section>
-
-            <section id="journey" class="journey-section py-5">
+            <!-- experience and education -->
+            <section id="journey" class="journey-section py-4">
                 <div class="container">
                     <div class="text-center mb-5">
-                        <h2 class="section-title">My Journey</h2>
+                        <h2  class="section-title fw-bold text-uppercase">My Journey</h2>
                         <p class="section-subtitle">
                             My path from Computer Science student to Full Stack Developer.
                         </p>
@@ -340,7 +339,7 @@
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <span class="timeline-year">2025 - Present</span>
+                                <span class="timeline-year">June 2025 - Present</span>
                                 <h5>Junior Full Stack Developer (MERN)</h5>
                                 <small class="text-warning">Euphoricoders Pvt. Ltd.</small>
                                 <p>
@@ -359,9 +358,9 @@
             <section class="py-5" style="background-color: #131010;">
                 <div class="container">
                     <div class="text-center mb-4">
-                        <h2 class="fw-bold text-light">
+                        <h4 class="fw-semibold text-light">
                             GitHub Activity
-                        </h2>
+                        </h4>
                         <p class="text-secondary">
                             Consistency in coding and continuous learning.
                         </p>
@@ -382,26 +381,26 @@
                         <p class="small">Feel free to reach out for inquiries or collaborations!</p>
                     </div>
 
-                    <div class="d-flex justify-content-center gap-3">
+                    <div class="d-flex flex-wrap flex-sm-nowrap justify-content-center gap-2 gap-sm-3">
                         <div class="contact-item p-2 p-sm-3">
                             <a href="https://www.linkedin.com/in/ardra-m-sivakumaran" target="_blank"
-                                class="contact-link d-flex justify-content-center align-items-center text-light">
+                                class="contact-link text-decoration-none d-flex justify-content-center align-items-center text-light gap-1 gap-sm-2">
                                 <i class="fa-brands fa-square-linkedin"></i>
-                                <span>LinkedIn</span>
+                                <span class="fs-6">LinkedIn</span>
                             </a>
                         </div>
                         <div class="contact-item p-2 p-sm-3">
                             <a href="https://github.com/ardra-m-siva" target="_blank"
-                                class="contact-link d-flex justify-content-center align-items-center text-light">
+                                class="contact-link text-decoration-none d-flex justify-content-center align-items-center text-light gap-1 gap-sm-2">
                                 <i class="fa-brands fa-github"></i>
-                                <span>GitHub</span>
+                                <span class="fs-6">GitHub</span>
                             </a>
                         </div>
                         <div class="contact-item p-2 p-sm-3">
                             <a href="mailto:ardrasivan2000@gmail.com"
-                                class="contact-link d-flex justify-content-center align-items-center text-light">
+                                class="contact-link text-decoration-none d-flex justify-content-center align-items-center text-light gap-1 gap-sm-2">
                                 <i class="fa-solid fa-envelope"></i>
-                                <span>Email</span>
+                                <span class="fs-6">Email</span>
                             </a>
                         </div>
                     </div>

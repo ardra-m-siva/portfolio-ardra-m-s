@@ -10,6 +10,11 @@
     }
 }
 
+body {
+    background-color: #131010;
+    color: var(--text);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -30,13 +35,12 @@
 }
 
 /* navbar */
-nav {
-    position: static;
-    /* Reset to default */
-    top: auto;
-    /* Remove any fixed positioning */
-    z-index: 100;
-    /* Reset stacking context */
+.custom-navbar {
+    position: relative;
+    z-index: 1000;
+    /* background-color: transparent !important; */
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .item {
@@ -50,6 +54,7 @@ nav {
     color: #FFD700;
     font-size: 17px;
     transition: all 0.3s ease-in-out;
+    display: inline-block;
 }
 
 .item:hover {
@@ -59,19 +64,63 @@ nav {
 }
 
 .collapse-menu {
-    margin-top: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
 .toggler-btn {
     position: absolute;
-    right: 5px;
+    right: 15px;
     top: 15px;
-    border: none;
-    background: none;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 8px !important;
+    margin: 5px !important;
+    background: none !important;
     font-size: 24px;
     transition: all 0.3s ease-in-out;
-    z-index: 100;
+    z-index: 1001;
+    color: #39d0cb !important;
+}
+
+.toggler-btn:focus,
+.toggler-btn:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* mobile styling for collapsed navbar */
+@media (max-width: 991.98px) {
+    .custom-navbar {
+        padding: 10px 0;
+    }
+
+    .custom-navbar:has(.collapse-menu.show),
+    .custom-navbar:has(.collapse-menu.collapsing) {
+        background-color: #000000 !important;
+    }
+
+    .collapse-menu {
+        background-color: #000000 !important;
+        position: relative; /* Restores normal document flow so expanding pushes content down */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 15px 0;
+        margin-top: 50px; /* Leave space for the top-right toggler */
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .item {
+        display: block;
+        margin: 10px auto;
+        width: 85%;
+        text-align: center;
+    }
 }
 
 /* https://png.pngtree.com/thumb_back/fh260/background/20240610/pngtree-computer-of-a-programmer-with-lines-code-of-software-image_15746003.jpg */
@@ -149,7 +198,6 @@ nav {
     letter-spacing: 1.2px;
     margin-top: 20px;
     position: relative;
-    margin-bottom: 20px;
 }
 
 .about-description {
@@ -419,23 +467,12 @@ h2 {
     letter-spacing: 3px;
 }
 
-.project-list {
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
 .project-item {
     background: rgba(72, 207, 203, 0.1);
     border: 1px solid rgba(72, 207, 203, 0.3);
     border-radius: 10px;
-    padding: 20px;
     max-width: 300px;
     min-height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
@@ -591,8 +628,11 @@ h2 {
 
 .timeline-year {
     color: #48CFCB;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    /* font-style: italic; */
+    margin-bottom: 15px;
 }
 
 .timeline-content h4 {
@@ -625,9 +665,7 @@ h2 {
 }
 
 .contact-link {
-    text-decoration: none;
     font-size: 18px;
-    gap: 10px;
 }
 
 .contact-item:hover {
@@ -698,16 +736,6 @@ footer a {
         padding: 0.6rem 1.5rem;
     }
 
-    nav {
-        display: none;
-        padding: 10px 0;
-    }
-
-    .item {
-        margin: 5px;
-        width: 100%;
-        text-align: center;
-    }
 
     .col-md-3 {
         flex: 0 0 100%;
@@ -766,21 +794,7 @@ footer a {
         padding: 0.5rem 1.2rem;
     }
 
-    .item {
-        margin: 5px 0;
-        width: 100%;
-        text-align: center;
-    }
 
-    nav {
-        display: none;
-        padding: 8px 0;
-    }
-
-    .item {
-        margin: 5px 0;
-        width: 100%;
-    }
 
     .service-card {
         margin: 20px;
@@ -792,10 +806,6 @@ footer a {
 
     .service-card p {
         font-size: 18px;
-    }
-
-    .contact-item {
-        padding: 10px 15px;
     }
 
     .footer {
