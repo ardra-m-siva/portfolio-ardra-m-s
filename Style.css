@@ -193,10 +193,8 @@ body {
 
 .section-title {
     font-family: 'Arial', sans-serif;
-    font-size: 26px;
     color: #48CFCB;
     letter-spacing: 1.2px;
-    margin-top: 20px;
     position: relative;
 }
 
@@ -655,17 +653,11 @@ h2 {
 .contact-section .section-title {
     font-size: 26px;
     color: #48CFCB;
-    margin-bottom: 20px;
 }
 
 .contact-item {
     background: rgba(72, 207, 203, 0.1);
-    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-link {
-    font-size: 18px;
 }
 
 .contact-item:hover {
@@ -675,7 +667,6 @@ h2 {
 
 .github-card img{
     filter: invert(90%) hue-rotate(180deg);
-    /* color: #0c8884; */
 }
 
 /* back to top */
