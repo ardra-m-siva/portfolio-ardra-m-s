@@ -127,7 +127,7 @@ body {
 
 /* home section */
 .home-section {
-    height: 100vh;
+    height: 100dvh;
     position: relative;
     background: url('https://e0.pxfuel.com/wallpapers/149/259/desktop-wallpaper-web-development.jpg') no-repeat center center;
     background-attachment: fixed;
@@ -563,7 +563,6 @@ h2 {
 /* education and experience section  */
 .journey-section {
     background: #161616;
-    color: #fff;
 }
 
 .section-title {

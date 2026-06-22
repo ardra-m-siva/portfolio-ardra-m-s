@@ -60,3 +60,4 @@ I'm a Full Stack Developer with experience building modern web applications usin
 ![React](https://img.shields.io/badge/React-20232A?logo=react)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb)
+![Express.js](https://img.shields.io/badge/MongoDB-47A248?logo=express.js)
