@@ -585,7 +585,7 @@ h2 {
 .timeline::before {
     content: "";
     position: absolute;
-    left: 18px;
+    left: 17px;
     top: 0;
     width: 2px;
     height: 100%;
